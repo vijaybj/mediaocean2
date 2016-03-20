@@ -1,7 +1,7 @@
 
 Build Instructions:
 
-1. Checkout the project
+1. Clone the project.
 2. ShoppingCart is the root folder for the project.
 3. run "mvn test" command from this folder to execute the test case. There is only one test case.
 4. run "mvn package" command which will create an executable jar in target folder.
