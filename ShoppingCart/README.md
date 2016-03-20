@@ -11,11 +11,11 @@ Build Instructions:
 
 
  
-Approach to the solution
-
+Approach to the solution:
 
 1. I have used the Visitor pattern to implement the solution to the problem #1.
 2. Scanner is the Visitor and Products are Visitables.
 3. Products are of type CategoryAProduct, CategoryBProduct and CategoryCProduct.
 4. Product has an accept method which in turns calls the scan method of the scanner passing itself as an argument.
 5. Levy is Category specific and so is the total price of the product.
+6. We have to add products to ShoppingCart and when called checkout() will print the itemised Bill with respective totals.
