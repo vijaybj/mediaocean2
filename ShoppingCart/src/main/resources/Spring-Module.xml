@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <util:list id="shoppingCart" list-class="com.mo.retailstore.ShoppingCart" value-type="java.lang.String">
+        <ref local="catAProduct" />
+        <ref local="catBProduct" />
+        <ref local="catCProduct" />
+    </util:list>
+
+    <bean id="catAProduct" class="com.mo.retailstore.model.CategoryAProduct">
+        <constructor-arg type="java.lang.String" value="Category A Product"/>
+        <constructor-arg type="java.lang.Double" value="40"/>
+    </bean>
+
+    <bean id="catBProduct" class="com.mo.retailstore.model.CategoryBProduct">
+        <constructor-arg type="java.lang.String" value="Category B Product"/>
+        <constructor-arg type="java.lang.Double" value="60"/>
+    </bean>
+
+    <bean id="catCProduct" class="com.mo.retailstore.model.CategoryCProduct">
+        <constructor-arg type="java.lang.String" value="Category C Product"/>
+        <constructor-arg type="java.lang.Double" value="80"/>
+    </bean>
+
+</beans>
